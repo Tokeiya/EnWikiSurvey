@@ -11,6 +11,5 @@ public class CacheElementTests
 		fixture.Key.Is("hello");
 		fixture.Value.Is(10);
 		fixture.RefCount.Is(0ul);
-
 	}
 }
