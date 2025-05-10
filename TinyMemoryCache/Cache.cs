@@ -4,15 +4,26 @@ public class Cache<TKey, TValue> : IDisposable
 	where
 	TKey : IEquatable<TKey>
 {
-	public Cache(uint capacity, uint threshold, IAdapter<TKey, TValue> adapter)
+	//Capacity >= Threshold
+	public Cache(int capacity, int threshold, IAdapter<TKey, TValue> adapter)
 	{
 		//TODO:Implement
 #warning NotImplemented
 		throw new NotImplementedException();
 	}
 
-	public uint Capacity { get; } = 0;
-	public uint Threshold { get; } = 0;
+	public int Capacity { get; } = 0;
+	public int Threshold { get; } = 0;
+
+	public int Count
+	{
+		get
+		{
+			//TODO:Implement
+#warning NotImplemented
+			throw new NotImplementedException();
+		}
+	}
 
 
 	public void Dispose()
